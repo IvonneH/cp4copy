@@ -1,0 +1,136 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background: #fff;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Header */
+.header {
+  padding: 15px;
+  background-color: #7142f4;
+  color: #fff;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #7142f4;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Content */
+.content {
+  padding: 20px 100px 0px 100px;
+}
+
+.image h2 {
+  font-style: italic;
+  font-size: 1em;
+}
+
+/* Admin */
+.heading {
+  /*display: flex;*/
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.heading h2 {
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.add, .edit {
+  display: flex;
+}
+
+/* Form */
+input, textarea, select, button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+.form {
+  margin-right: 50px;
+}
+
+/* Uploaded images */
+.upload h2 {
+  margin: 0px;
+}
+
+.upload img {
+  max-width: 300px;
+}
+
+/* Suggestions */
+.suggestions {
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+.suggestion {
+  min-height: 20px;
+}
+
+.suggestion:hover {
+  background-color: #5BDEFF;
+  color: #fff;
+}
+
+/* Masonry */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.image-gallery {
+  column-gap: 1.5em;
+}
+
+.image {
+  margin: 0 0 1.5em;
+  display: inline-block;
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .image-gallery {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .image-gallery {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .image-gallery {
+    column-count: 2;
+  }
+}
